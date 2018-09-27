@@ -1,8 +1,10 @@
-body{
+html{
 	font-size: 62.5%;
+}
+body{
 	background-color: #68cdd5;
-
 	color: #FFFFFF;
+	font-size:initial;
 }
 .header{
 	margin-top: 1.9rem;
@@ -16,7 +18,8 @@ h1{
 	font-size:3rem;
 	text-align: left;
 	font-family: "HiraginoSansGB";
-	line-height:4.2rem;
+	line-height: 4.2rem;
+	margin: 0rem 3.7rem; 
 
 }
 .left{
