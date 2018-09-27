@@ -16,14 +16,14 @@ h1{
 	font-size:3rem;
 	text-align: left;
 	font-family: "HiraginoSansGB";
-	line-height:1.6rem;
+	line-height:4.2rem;
 
 }
 .left{
 	float: left;
-	margin-left:2.2rem;
+	margin-left:1.3rem;
 }
 .right{
 	float: right;
-	margin-right:2.2rem;
+	margin-right:1.3rem;
 }
