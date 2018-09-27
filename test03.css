@@ -1,0 +1,32 @@
+body{
+	font-size: 62.5%;
+	background-color: #68cdd5;
+
+	color: #FFFFFF;
+}
+.header{
+	margin-top: 1.9em;
+}
+.content {
+	text-align: center;
+	margin-top: 3.9em;
+}
+h1{
+	
+	font-size:3em;
+	text-align: left;
+	font-family: "HiraginoSansGB";
+	line-height:1.6em;
+
+}
+.left{
+	float: left;
+	/*margin-top: 3em;*/
+	margin-left:2.2em;
+}
+.right{
+	float: right;
+	/*margin-top: 3em;
+	margin-bottom: 6em;*/
+	margin-right:2.2em;
+}
