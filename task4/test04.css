@@ -1,0 +1,102 @@
+
+html{
+	font-size: 62.5%;
+	/*width: 100%;*/
+}
+body{
+	background-color: #eff0f4;
+	font-size: initial;
+	overflow: hidden;
+}
+
+/*#all{
+	
+	margin:0 auto;
+}*/
+
+.header{
+	background-color: #5fc0cd; 
+	/*padding: 1.5% 9.5%;*/
+	/*width: 100%;*/
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	/*position: fixed;*/
+	/*z-index: 18px;*/
+	color: #ffffff;
+}
+.register{
+	position: fixed;
+	left:3%;
+	top: 8px;
+}
+.close{
+	position: fixed;
+	right:3%;
+	top: 8px;
+}
+.login{
+	font-size: 1.8rem;
+}
+
+form{
+	/*background-color: red;*/
+	/*width: 100%;*/
+	/*margin: 0 auto;*/
+}
+input{
+	width: 100%;
+	font-size: 1.5rem;
+	/*font-family: "HiraginoSansGB";*/
+	border-style: none;
+
+}
+.phone{
+	background-image: url('imgs/task01.png');
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+	line-height: 55px; 
+	margin-top: 2%;
+	padding-left: 72px;
+	/*width: 80%;*/
+	height: 55px;
+}
+.password{
+	background-image: url('imgs/task02.png');
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+	line-height: 55px; 
+	margin-top: 2%;
+	padding-left: 72px;
+	/*width: 90%;*/
+	height: 55px;
+}
+
+ button{
+	/*padding: 1% 10%;*/
+	margin-top: 2%;
+	width: 100%;
+	background-color: #5fc0cd; 
+	display: block;
+	border-style: none;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.7rem;
+	color: #ffffff;
+
+}
+a{
+	float: right;
+	font-size: 1.3rem;
+	/*text-decoration: none;*/
+	margin-top: 2%;
+}
+/*input::-webkit-input-placeholder { 
+color: #999; 
+-webkit-transition: color.5s; 
+} 
+input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder { 
+color: #c2c2c2; 
+-webkit-transition: color.5s; 
+} 
+*/

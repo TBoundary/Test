@@ -3,8 +3,12 @@ html{
 }
 body{
 	background-color: #68cdd5;
+<<<<<<< HEAD
 	font-size:initial;
+=======
+>>>>>>> c1117f313e2510bd9bccb560fadba1f079e2baf1
 	color: #FFFFFF;
+	font-size:initial;
 }
 .header{
 	margin-top: 1.9rem;
@@ -18,8 +22,13 @@ body{
 	font-size:2.5rem;
 	text-align: left;
 	font-family: "HiraginoSansGB";
+<<<<<<< HEAD
 	line-height:3.2rem;
 	margin: 1.3rem 3.7rem;
+=======
+	line-height: 4.2rem;
+	margin: 1.3rem 3.7rem; 
+>>>>>>> c1117f313e2510bd9bccb560fadba1f079e2baf1
 
 }
 .left{
