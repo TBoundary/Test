@@ -7,23 +7,27 @@
 	<title>任务四</title>
 </head>
 <body>
-<div id="all">	
 	<div class="header">
 		<span class="register">注册</span>
 		<span class="login">登录</span>
 		<span class="close">退出</span>
 	</div>
 	<form action="" name="login" method="get" class="login">
-		<input class="phone" type="text" name="phone" placeholder="|    请输入手机号"></br>
-		<input class="password" type="password" name="pwd" placeholder="|    请输入密码">
-		<!-- <input class="password" type="password" name="pwd" placeholder="请输入密码" onfocus="this.placeholder=''"onblur="this.placeholder='请输入密码'"> 聚焦：placeholder中的字消失；失去焦点时：字体变为‘’中的字体-->
-		<button>登 录</button>
+		<div class="in_phone">
+			<img src="imgs/task01.png">
+			<input  type="number" name="phone" placeholder="请输入手机号" oninput="if(value.length>11)value=value.slice(0,11)"></br>
+		</div>
+		<div class="in_pwd">
+			<img src="imgs/task02.png">
+			<input type="password" name="pwd" placeholder="请输入密码">
+		</div>
+			<!-- <input class="password" type="password" name="pwd" placeholder="请输入密码" onfocus="this.placeholder=''"onblur="this.placeholder='请输入密码'"> 聚焦：placeholder中的字消失；失去焦点时：字体变为‘’中的字体-->
+			<button>登 录</button>
 		<!-- <input type="button" name="login" value="login"> -->
 	</form>
 	
 	<div class="footer">
 		<a href="">忘记密码</a>
 	</div>
-</div>
 </body>
 </html>
