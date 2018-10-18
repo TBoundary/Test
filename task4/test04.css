@@ -5,27 +5,26 @@ html{
 body{
 	background-color: #eff0f4;
 	font-size: initial;
-	/*overflow: hidden;*/
+	overflow: hidden;
+	margin: 0;
 }
 
 /*导航栏*/
 .header{
 	background-color: #5fc0cd; 
 	text-align: center;
-	height: 40px;
+	height: 45px;
 	line-height: 40px;
 	color: #ffffff;
 }
 
 .register{
 	position: fixed;
-	left:3%;
-	top: 8px;
+	left:10px;
 }
 .close{
 	position: fixed;
-	right:3%;
-	top: 8px;
+	right:10px;
 }
 .login{
 	font-size: 1.8rem;
@@ -36,30 +35,31 @@ body{
 	background-color: #ffffff;
 	height: 50px;
 	width: 100%;
-	margin-top: 2%;
+	margin-top: 12px;
 }
 .in_pwd{
 	background-color: #ffffff;
 	height: 50px;
 	width: 100%;
-	margin-top: 2%;
+	margin-top: 12px;
 }
 img{
 	position: fixed;
-	/*top: 35%;*/
-	left: 2.3%;
-	margin-top: 0.4%;
+	left: 12px;
+	margin-top: 10px;
+	width: 20px;
 
 }
 input{
+	width: 100%;
 	font-size: 1.5rem;
 	border-style: none;
-	border-left: 2px solid #eff0f4;
+	border-left: 1px solid #eff0f4;
 	outline-style: none;/*去掉输入框被点击时的高亮显示*/
-	height: 35px;
-	margin-top: 0.5%;
-	margin-left: 14%;
-	padding-left: 15px;
+	height: 32px;
+	margin-top: 7px;
+	margin-left: 53px;
+	padding-left: 18px;
 }
 
 .phone{
@@ -70,12 +70,12 @@ input{
 
 /*底部*/
  button{
-	margin-top: 2%;
+	margin-top: 12px;
 	width: 100%;
 	background-color: #5fc0cd; 
 	display: block;
 	border-style: none;
-	height: 40px;
+	height: 45px;
 	line-height: 40px;
 	font-size: 1.7rem;
 	color: #ffffff;
@@ -83,7 +83,8 @@ input{
 a{
 	float: right;
 	font-size: 1.3rem;
-	margin-top: 2%;
+	margin-top: 12px;
+	margin-right: 10px;
 }
 /*input::-webkit-input-placeholder { 
 color: #999; 
@@ -94,3 +95,11 @@ color: #c2c2c2;
 -webkit-transition: color.5s; 
 } 
 */
+/*去掉input的type为number时，输入框右侧出现的上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

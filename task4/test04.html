@@ -9,20 +9,21 @@
 <body>
 	<div class="header">
 		<span class="register">注册</span>
-		<span class="login">登录</span>
+		<span class="login">登 录</span>
 		<span class="close">退出</span>
 	</div>
 	<form action="" name="login" method="get" class="login">
 		<div class="in_phone">
 			<img src="imgs/task01.png">
-			<input  type="number" name="phone" placeholder="请输入手机号" oninput="if(value.length>11)value=value.slice(0,11)"></br>
+			<input  type="number" name="phone"  placeholder="请输入手机号" oninput="if(value.length>11)value=value.slice(0,11)" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled"></br>
+			<!--onkeypress作用：限制type为number时，还可输入e、+、-、.等特殊字符 -->
 		</div>
 		<div class="in_pwd">
 			<img src="imgs/task02.png">
 			<input type="password" name="pwd" placeholder="请输入密码">
 		</div>
 			<!-- <input class="password" type="password" name="pwd" placeholder="请输入密码" onfocus="this.placeholder=''"onblur="this.placeholder='请输入密码'"> 聚焦：placeholder中的字消失；失去焦点时：字体变为‘’中的字体-->
-			<button>登 录</button>
+			<button>登 &nbsp&nbsp录</button>
 		<!-- <input type="button" name="login" value="login"> -->
 	</form>
 	
