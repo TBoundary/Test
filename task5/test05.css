@@ -1,0 +1,136 @@
+
+html {
+
+}
+body {
+	overflow-x: hidden;
+	margin: 0;
+}
+.icon {
+	width: 25px;
+	height: 20px;
+}
+/*头部*/
+.header {
+	height: 45px;
+	line-height: 45px;
+	background-color: #5fc0cd;
+
+}
+.page {
+	margin-top: -20px;
+	text-align: center;/*没效果┭┮﹏┭┮*/
+	/*margin-left: 35%;*/
+	color: #fff;
+}
+.infor {
+	display: flex;
+	justify-content: space-around;
+	background: url(imgs/bg.png) no-repeat;
+	background-size: 100% auto;
+	margin-left: -25%;
+}
+.infor > div {
+	flex: none;
+}
+.head_img {
+	width: 50%;
+	height: 60%;
+	margin-top: 10%;
+	margin-left: 5px;
+}
+.right {
+	margin-left: -55%;
+	margin-top: 1%;
+	color: #fff;
+}
+.infor_icon {
+	width: 25px;
+	height: 25px;
+	margin-top: -5%;
+}
+.r_add {
+	margin-top: -10%;
+}
+/*内容，详细信息*/
+.skill {
+	border-left: 3px solid #5fc0cd;
+	margin: 13px 1px 1px 9px;
+	padding-left: 8px;
+}
+p {
+	display: inline-block;
+}
+
+ul {
+	/*position: fixed;
+	top: 33%;
+	bottom: 60px;
+	left: -22px;*/
+	width: 100%;
+	/*margin-bottom: 60px;
+	margin-left: -9%;*/
+	margin: -5px 0 60px -25px;
+}
+li {
+	border-bottom: 1px solid #999;
+	list-style: none;
+}
+.icon {
+	width: 15px;
+	height: 15px;
+
+}
+.title {
+	border-right: 1px solid #999;
+	padding-right: 15px;
+	color: #999;
+}
+.title_l {
+	border-right: 1px solid #999;
+	padding-right: 15px;
+	color: #999;
+}
+.content {
+	padding-left: 15px;
+}
+.content_r {
+	/*margin-bottom: 30px;*/
+	width: 93%;
+	height: auto;
+	/*margin-left: 7%;*/
+
+}
+
+/*底部按钮*/
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+    background-color: #fff;
+
+}
+button {
+	/*width: 100%*/
+	height: 45px;
+	border-radius: 6px;
+}
+.message {
+	/*padding: 8px 35px;*/
+	width: 45%;
+	margin-left: 3.5%;
+	margin-right: 1%;
+	border: 2px solid #5fc0cd;
+	background-color: #fff;
+	color: #5fc0cd;
+}
+.contact {
+	width: 45%;
+	border: 2px solid #5fc0cd;
+	background-color: #5fc0cd;
+	color: #fff;
+}
+/*.bg {
+	float: left;
+	width: 100%;
+}*/
