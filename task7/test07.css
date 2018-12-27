@@ -1,0 +1,107 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	margin: 0;
+	font-size: 1.4rem;
+	background-color: #f0f0f0;
+
+}
+
+/*顶部*/
+.header{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #5fc0cd;
+}
+.header > img{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 20px;
+
+}
+/*内容*/
+#all{
+	background-color: #f0f0f0;
+}
+.cue{
+	/*width: 100%;*/
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	/*margin-top: 15px;*/
+	margin-bottom: 20px;
+	/*border-bottom: 1px solid purple;*/
+	background-color: #fff;
+}
+.cue > img{
+	width: 20px;
+	height: 20px;
+}
+/*.slide{
+	height: 100%;
+}*/
+/*-------轮播开始--------*/
+  /*li样式*/
+/*  .slide{
+  	position: relative;
+  }*/
+  div > ol > li{
+  	/*content: url(imgs/circle-disc.png);*/
+  	position: relative;
+  	left: 10px;
+  	bottom: -28px;
+
+  
+}
+.item{
+	/*height: 100%;*/
+	background-color: #fff;
+}
+.gameName{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #fbb435;
+	margin-bottom: 10px;
+	font-size: 1.6rem;
+	color: #fbb435;
+}
+.version{
+	/*position: absolute;*/
+	width: 80%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 1.7rem;
+	margin: 0 auto;
+	/*color: #fff;*/
+	background-color: #5fc0cd;
+}
+.version > a{
+	color: #fff;
+	text-decoration: none;
+}
+.item > p{
+	height: 20px;
+	margin-top: 8px;
+}
+.number{
+	text-align: center;
+}
+/*.add{
+	width: 100%;
+	height: 20px;
+}*/
+/*轮播图标*/
+.right > img{
+	position: absolute;
+	right: 14px;
+	top: 160px;
+	width: 30px;
+	height: 30px;
+}

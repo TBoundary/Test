@@ -1,0 +1,211 @@
+
+html{
+	font-size: 62.5%;
+}
+body{
+	margin: 0;
+	font-size: 1.4rem;
+	background-color: #5fc0cd;
+	/*background-color: #f0f0f0;*/
+	/*background-color: black;*/
+
+}/*第二个界面*/
+.second_nag{
+	display: flex;
+	justify-content: space-between;
+	/*width: 100%;*/
+	height: 60px;
+	margin: 5% 8px -6% 8px;
+}
+.second_nag > img{
+	width: 25px;
+	height: 23px;
+}
+.second_back{
+	width: 20px;
+	height: 20px;
+}
+.second_nag > span{
+	font-size: 1.6rem;
+	color: #fff;
+}
+/*插入音频*/
+.aud{
+	position: relative;
+	height: 70px;
+}
+.aud > span{
+	position: absolute;
+	top: 60px;
+	left: 30px;
+	/*font-size: 1.4rem;*/
+	color: #fff;
+}
+.voice{
+	width: 100%;
+	height: 50px;
+	background-color: #b9e9f5;
+
+}
+.voice > span{
+	line-height: 50px;
+	margin-left: 10px;
+}
+.voice > img{
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	width: 25px;
+	height: 25px;
+}
+#music_icon{
+	position: absolute;
+	top: 4px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+}
+/*audio{
+	position: absolute;
+	right: 8px;
+	top: 10px;
+	width: 20px;
+
+}*/
+/*投票框*/
+.second_grid{
+	display: flex;
+	justify-content: space-around;
+	/*flex-shrink: 0;*/
+	flex-wrap: wrap;
+}
+.list{
+	position: relative;
+	width: 27%;
+	/*padding-bottom: 20px;
+	padding-top: 20px;*/
+}
+
+.box{
+	border: 3px solid #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.box > p{
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;/*去除p标签的默认样式*/
+	text-align: center;
+	/*font-size: 1.4rem;*/
+}
+.name{
+	width: 100%;
+	padding: 25px 0;
+	/*line-height: 80%;*/
+	/*margin-top: -5px;*/
+	background-color: #f5c97b;
+}
+.number{
+	width: 100%;
+	padding: 2px 0;
+	background-color: #83b09a;
+}
+.icon_hover{
+    display: none;
+    text-align: justify;
+    text-align-last: justify;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+	/*height: 50px;
+	line-height: 50px;
+	text-align: center;*/
+}
+.icon_hover > img{
+
+	width: 12px;
+	height: 12px;
+	padding: 3px;
+	background-color: #fff;
+}
+.list:hover .icon_hover{
+	display: block;
+}
+/*底部*/
+/*a{
+	text-decoration: none;
+	color: #fff;
+}*/
+.footer{
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	height: 70px;
+	width: 100%;
+	background-color: #5fc0cd;
+}
+.footer > button{
+	height: 50px;
+	width: 60%;
+	/*padding: 10px 80px;*/
+	/*line-height: 70px;*/
+	outline: none;
+	border: none;
+	margin-top: 10px;
+	background-color: #fbb435;
+}
+/*按钮事件开始*/
+#popBox{
+	position: fixed;
+	display: none;
+	width: 230px;
+	height: 170px;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 10px;
+	z-index: 11;
+	background-color: #fff;
+}
+#popBox > p{
+	text-align: center;
+	font-size: 1.6rem;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	/*font-family: "HiraginoSansGB";*/
+}
+#popBox > button{
+	border-radius: 3px;
+	padding: 10px 26px;
+	margin-left: 20px;
+	/*margin-top: 10px;*/
+	outline: none;
+	color: #fff;
+}
+.sure{
+	border: 1px solid #f66f6f;
+	background-color: #f66f6f;
+}
+.exit{
+	border: 1px solid #c6c6c6;
+	background-color: #c6c6c6;
+}
+#popLayer{
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: gray;
+	opacity: .8;
+}
+/*
+2页面发言结束背景色：#b9e9f5
+投死背景色：#fbb435
+弹框背景 #fff
+弹框确定: #f66f6f;  取消：c6c6c6;
+*/

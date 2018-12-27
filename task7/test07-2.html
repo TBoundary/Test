@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--在IE运行最新的渲染模式  bootstrap -->
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>投票</title>
+	<link rel="stylesheet" type="text/css" href="vote.css">
+</head>
+<body>
+	<div class="second_nag">
+		<img src="imgs/文本.png">
+		<span>投 票</span>
+		<a href="test07-1.html">
+			<img class="second_back" src="imgs/叉.png">
+		</a>
+	</div>
+	<div class="aud">
+		<div class="voice">
+			<span>发言讨论结束，大家请投票</span>
+			<audio autoplay loop>
+				<source src="task7/财富自由.mp3" type="audio/mpeg">
+			</audio>
+			<div class="right">
+				<img src="imgs/play.png" id="music_icon">
+			</div>
+			<img src="imgs/下三角.png">
+		</div>
+		<span>点击得票数最多人的头像</span>
+	</div>
+	
+	<div class="second_grid">
+		<div class="list">
+			<div class="box">
+				<p class="name">水民</p>
+				<p class="number">1号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">水民</p>
+				<p class="number">2号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">警察</p>
+				<p class="number">3号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">法官</p>
+				<p class="number">4号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">狙击手</p>
+				<p class="number">5号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">医生</p>
+				<p class="number">6号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">杀手</p>
+				<p class="number">7号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">水民</p>
+				<p class="number">8号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		<div class="list">
+			<div class="box">
+				<p class="name">水民</p>
+				<p class="number">9号</p>
+			</div>
+			<div class="icon_hover">
+				<img src="imgs/kill.png">
+				<img src="imgs/search.png">
+				<img src="imgs/aim.png">
+				<img src="imgs/add.png">
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="footer">
+		<button onclick="popBox()">投死</button>
+		<!-- <a href="test07-1.html">投 死</a> -->
+	</div>
+	<div id="popLayer"></div><!-- 背景层-->
+	<div id="popBox">
+		<p>确定要结束游戏吗？</p>
+		<button class="sure" onclick="trans()">确定</button>
+		<button class="exit" onclick="closeBox()">取消</button>
+	</div>
+	<script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		// var btnElement = document.getElementByITagName("button")[0];
+
+		// btnElement.addEvenListener('click',kill);
+		// function kill(){
+		// 	window.location.href="test07-1.html";
+		// }
+		// btnElement.click = function(){
+		// 	window.location.href="test07-1.html";
+		// }
+		// var musicElement = document.getElementById("music_icon");
+
+		// 背景音乐播放
+		var audio = $('audio').get(0);
+		$('#music_icon').click(function(){
+			event.stopPropagation();//防止冒泡
+			if(audio.paused){
+				$('#music_icon').attr('src','imgs/play.png');
+				audio.play();
+				return;
+			} else{
+				$('#music_icon').attr('src','imgs/stop.png');
+				audio.pause();
+			}
+		});
+		// 页面弹窗
+		function popBox(){
+			var popBox = document.getElementById('popBox');
+			var popLayer = document.getElementById('popLayer');
+
+			popLayer.style.width = document.body.scrollWidth + "px";
+			popLayer.style.height = document.body.scrollHeight + "px";
+
+			popLayer.style.display = "block";
+			popBox.style.display = "block";
+
+		}//投死按钮popBoxb结束
+		function closeBox(){
+			var popBox = document.getElementById('popBox');
+			var popLayer = document.getElementById('popLayer');
+
+			popLayer.style.display = "none";
+			popBox.style.display = "none";
+		}//关闭弹窗closeBox结束
+		function trans(){
+			window.location.href = "test07-3.html";
+		}//页面切换
+	</script>
+</body>
+</html>
